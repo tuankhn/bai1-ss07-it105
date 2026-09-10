@@ -1,92 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2026-09-10T12:20:00.000Z" agent="Antigravity" version="21.0.0" type="device">
-  <diagram id="student_class_diagram" name="Class Diagram - Student Encapsulation">
-    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2026-09-10T12:40:00.000Z" agent="Antigravity" version="21.0.0" type="device">
+  <diagram id="student_class" name="Student Class Diagram">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
 
-        <!-- Tiêu đề chính -->
-        <mxCell id="title" value="&lt;b&gt;SƠ ĐỒ LỚP UML (CLASS DIAGRAM) - THIẾT KẾ ĐÓNG GÓI LỚP HỌC VIÊN (STUDENT)&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot; color=&quot;#475569&quot;&gt;Hệ thống RikkeiLearn | Học phần: IT105 - Phân tích &amp;amp; Thiết kế Phần mềm&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#0F172A;" vertex="1" parent="1">
-          <mxGeometry x="150" y="30" width="850" height="40" as="geometry" />
+        <!-- Tiêu đề -->
+        <mxCell id="title" value="SƠ ĐỒ LỚP (CLASS DIAGRAM) - LỚP STUDENT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="400" height="30" as="geometry" />
         </mxCell>
 
-        <!-- KHỐI 1: BẢN THIẾT KẾ SƠ BỘ (INSECURE / UNENCAPSULATED) -->
-        <mxCell id="box_before_title" value="&lt;b&gt;1. BẢN THIẾT KẾ SƠ BỘ (BAN ĐẦU)&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#DC2626&quot; style=&quot;font-size: 10px;&quot;&gt;[!] Lỗ hổng: Để trống bổ từ, thiếu kiểm soát điểm&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#334155;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="60" y="100" width="280" height="30" as="geometry" />
+        <!-- Khung Lớp Student theo chuẩn UML chuẩn của Draw.io -->
+        <mxCell id="class_student" value="Student" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1.5;fillColor=#ffffff;fontColor=#000000;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="160" y="110" width="280" height="260" as="geometry" />
         </mxCell>
 
-        <mxCell id="class_student_before" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Student&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-bottom:4px;text-align:center;font-size:10px;color:#64748B;&quot;&gt;&amp;laquo;insecure&amp;raquo;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:8px;text-align:left;color:#64748B;&quot;&gt;studentId : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;text-align:left;color:#64748B;&quot;&gt;name : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;text-align:left;color:#DC2626;&quot;&gt;&lt;b&gt;score : double&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:8px;text-align:left;color:#64748B;&quot;&gt;getStudentId() : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;text-align:left;color:#64748B;&quot;&gt;getName() : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;text-align:left;color:#64748B;&quot;&gt;getScore() : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;text-align:left;color:#DC2626;font-style:italic;&quot;&gt;(Chưa có setter an toàn)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1.5;strokeColor=#94A3B8;fillColor=#F8FAFC;fontColor=#0F172A;" vertex="1" parent="1">
-          <mxGeometry x="80" y="140" width="240" height="230" as="geometry" />
+        <!-- Ngăn Thuộc tính (Attributes) -->
+        <mxCell id="attr_box" value="- studentId : String&#xa;- name : String&#xa;- score : double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;" vertex="1" parent="class_student">
+          <mxGeometry y="30" width="280" height="65" as="geometry" />
         </mxCell>
 
-        <!-- Mũi tên chuyển đổi -->
-        <mxCell id="arrow_transform" value="&lt;b&gt;Chuẩn hóa&lt;br&gt;Đóng gói&lt;/b&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeWidth=2.5;strokeColor=#1E3A2F;fontColor=#1E3A2F;fontSize=11;align=center;" edge="1" parent="1">
-          <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="340" y="255" as="sourcePoint" />
-            <mxPoint x="430" y="255" as="targetPoint" />
+        <!-- Vạch ngăn cách giữa thuộc tính và phương thức -->
+        <mxCell id="separator" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;" vertex="1" parent="class_student">
+          <mxGeometry y="95" width="280" height="8" as="geometry" />
+        </mxCell>
+
+        <!-- Ngăn Phương thức (Methods) -->
+        <mxCell id="method_box" value="+ Student()&#xa;+ Student(studentId: String, name: String, score: double)&#xa;+ getStudentId() : String&#xa;+ setStudentId(studentId: String) : void&#xa;+ getName() : String&#xa;+ setName(name: String) : void&#xa;+ getScore() : double&#xa;+ setScore(score: double) : void&#xa;+ displayInfo() : void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=12;fontColor=#000000;" vertex="1" parent="class_student">
+          <mxGeometry y="103" width="280" height="157" as="geometry" />
+        </mxCell>
+
+        <!-- Ghi chú ràng buộc (UML Note) cho setScore -->
+        <mxCell id="note_constraint" value="Ràng buộc setScore():&#xa;0.0 &lt;= score &lt;= 10.0&#xa;Nếu sai: từ chối gán điểm" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="500" y="270" width="160" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Đường nối nét đứt từ setScore sang Note -->
+        <mxCell id="edge_note" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1.2;strokeColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="note_constraint">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="305" as="sourcePoint" />
+            <mxPoint x="500" y="305" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-
-        <!-- KHỐI 2: BẢN THIẾT KẾ HOÀN CHỈNH (CHUẨN UML ĐÓNG GÓI - SECURE) -->
-        <mxCell id="box_after_title" value="&lt;b&gt;2. BẢN THIẾT KẾ HOÀN CHỈNH (CHUẨN UML ĐÓNG GÓI)&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#15803D&quot; style=&quot;font-size: 10px;&quot;&gt;[✓] Thuộc tính Private (-), Phương thức Public (+), Ràng buộc setScore()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1E293B;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="420" y="100" width="370" height="30" as="geometry" />
-        </mxCell>
-
-        <mxCell id="class_student_after" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b style=&quot;font-size:14px;&quot;&gt;Student&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-bottom:6px;text-align:center;font-size:10px;color:#475569;&quot;&gt;&amp;laquo;Entity&amp;raquo;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-color:#1E293B;&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#881337&quot;&gt;&lt;b&gt;-&lt;/b&gt;&lt;/font&gt; studentId : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#881337&quot;&gt;&lt;b&gt;-&lt;/b&gt;&lt;/font&gt; name : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#881337&quot;&gt;&lt;b&gt;-&lt;/b&gt;&lt;/font&gt; &lt;b&gt;score : double&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-color:#1E293B;&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#15803D&quot;&gt;&lt;b&gt;+&lt;/b&gt;&lt;/font&gt; Student()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#15803D&quot;&gt;&lt;b&gt;+&lt;/b&gt;&lt;/font&gt; Student(studentId: String, name: String, score: double)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#15803D&quot;&gt;&lt;b&gt;+&lt;/b&gt;&lt;/font&gt; getStudentId() : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#15803D&quot;&gt;&lt;b&gt;+&lt;/b&gt;&lt;/font&gt; setStudentId(studentId: String) : void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#15803D&quot;&gt;&lt;b&gt;+&lt;/b&gt;&lt;/font&gt; getName() : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#15803D&quot;&gt;&lt;b&gt;+&lt;/b&gt;&lt;/font&gt; setName(name: String) : void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#15803D&quot;&gt;&lt;b&gt;+&lt;/b&gt;&lt;/font&gt; getScore() : double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#15803D&quot;&gt;&lt;b&gt;+&lt;/b&gt;&lt;/font&gt; &lt;b&gt;setScore(score: double) : void&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:10px;text-align:left;&quot;&gt;&lt;font color=&quot;#15803D&quot;&gt;&lt;b&gt;+&lt;/b&gt;&lt;/font&gt; displayInfo() : void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=1;shadow=1;comic=0;labelBackgroundColor=none;strokeWidth=2;strokeColor=#1E293B;fillColor=#FFFFFF;fontColor=#0F172A;" vertex="1" parent="1">
-          <mxGeometry x="450" y="140" width="340" height="340" as="geometry" />
-        </mxCell>
-
-        <!-- UML Constraint Note cho setScore -->
-        <mxCell id="note_setscore" value="&lt;b&gt;&amp;laquo;constraint&amp;raquo;&lt;/b&gt;&lt;br&gt;&lt;b&gt;Ràng buộc nghiệp vụ setScore():&lt;/b&gt;&lt;br&gt;• Điều kiện: &lt;font color=&quot;#15803D&quot;&gt;&lt;b&gt;0.0 &amp;le; score &amp;le; 10.0&lt;/b&gt;&lt;/font&gt;&lt;br&gt;• Nếu điểm âm hoặc &amp;gt; 10:&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;rarr; &lt;font color=&quot;#DC2626&quot;&gt;&lt;b&gt;Từ chối cập nhật&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;rarr; Giữ nguyên điểm cũ &amp;amp; Báo lỗi" style="shape=note;whiteSpace=wrap;html=1;size=16;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fillColor=#FEF3C7;strokeColor=#D97706;strokeWidth=1.5;fontColor=#92400E;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="840" y="340" width="220" height="110" as="geometry" />
-        </mxCell>
-
-        <!-- Đường nối giữa note và setScore -->
-        <mxCell id="link_note" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=1.5;strokeColor=#D97706;exitX=1;exitY=0.88;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="class_student_after" target="note_setscore">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <!-- KHỐI 3: BẢNG TRA CỨU BỔ TỪ TRUY CẬP (ACCESS MODIFIERS) -->
-        <mxCell id="box_legend_title" value="&lt;b&gt;QUY CHUẨN BỔ TỪ TRUY CẬP UML&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1E293B;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="840" y="100" width="220" height="30" as="geometry" />
-        </mxCell>
-
-        <mxCell id="table_legend" value="&lt;table style=&quot;width:100%;font-size:10px;border-collapse:collapse;&quot;&gt;&lt;tr style=&quot;background:#334155;color:#ffffff;&quot;&gt;&lt;th style=&quot;padding:4px;&quot;&gt;Ký hiệu&lt;/th&gt;&lt;th style=&quot;padding:4px;&quot;&gt;Bổ từ&lt;/th&gt;&lt;th style=&quot;padding:4px;&quot;&gt;Phạm vi&lt;/th&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#F8FAFC;&quot;&gt;&lt;td style=&quot;text-align:center;&quot;&gt;&lt;b style=&quot;color:#15803D;font-size:12px;&quot;&gt;+&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Public&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Toàn hệ thống&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#FFFFFF;&quot;&gt;&lt;td style=&quot;text-align:center;&quot;&gt;&lt;b style=&quot;color:#881337;font-size:12px;&quot;&gt;-&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Private&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Chỉ nội bộ lớp&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#F8FAFC;&quot;&gt;&lt;td style=&quot;text-align:center;&quot;&gt;&lt;b style=&quot;color:#B45309;font-size:12px;&quot;&gt;#&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Protected&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Lớp con &amp;amp; Gói&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#FFFFFF;&quot;&gt;&lt;td style=&quot;text-align:center;&quot;&gt;&lt;b style=&quot;color:#475569;font-size:12px;&quot;&gt;~&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Package&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Cùng gói&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#CBD5E1;fillColor=#F8FAFC;overflow=fill;rounded=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="840" y="140" width="220" height="150" as="geometry" />
-        </mxCell>
-
-        <!-- KHỐI 4: MINH HỌA TIẾN TRÌNH RẼ NHÁNH TẠI setScore() -->
-        <mxCell id="box_flow_container" value="&lt;b&gt;CƠ CHẾ KIỂM SOÁT NGHIỆP VỤ TẠI setScore(newScore)&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#CBD5E1;fontColor=#1E293B;startSize=26;strokeWidth=1.2;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="80" y="520" width="980" height="160" as="geometry" />
-        </mxCell>
-
-        <mxCell id="node_input" value="&lt;b&gt;1. Client gọi:&lt;/b&gt;&lt;br&gt;setScore(newScore)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=1.2;fontSize=10;fontColor=#0F172A;" vertex="1" parent="box_flow_container">
-          <mxGeometry x="30" y="55" width="160" height="50" as="geometry" />
-        </mxCell>
-
-        <mxCell id="node_decision" value="&lt;b&gt;2. Kiểm tra điều kiện:&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#B45309&quot;&gt;&lt;b&gt;0.0 &amp;le; newScore &amp;le; 10.0 ?&lt;/b&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#D97706;strokeWidth=1.5;fontSize=10;fontColor=#92400E;" vertex="1" parent="box_flow_container">
-          <mxGeometry x="270" y="35" width="230" height="90" as="geometry" />
-        </mxCell>
-
-        <mxCell id="flow_arrow1" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=1.5;strokeColor=#334155;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="box_flow_container" source="node_input" target="node_decision">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="node_success" value="&lt;b&gt;3a. CHẤP THUẬN:&lt;/b&gt;&lt;br&gt;this.score = newScore&lt;br&gt;&lt;font color=&quot;#15803D&quot;&gt;(Trả về True / Ghi nhận điểm mới)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#15803D;strokeWidth=1.2;fontSize=10;fontColor=#166534;" vertex="1" parent="box_flow_container">
-          <mxGeometry x="640" y="40" width="280" height="45" as="geometry" />
-        </mxCell>
-
-        <mxCell id="node_fail" value="&lt;b&gt;3b. TỪ CHỐI:&lt;/b&gt;&lt;br&gt;Giữ nguyên điểm cũ &amp;amp; Xuất cảnh báo lỗi&lt;br&gt;&lt;font color=&quot;#DC2626&quot;&gt;(Trả về False / Chặn dữ liệu bẩn)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEE2E2;strokeColor=#DC2626;strokeWidth=1.2;fontSize=10;fontColor=#991B1B;" vertex="1" parent="box_flow_container">
-          <mxGeometry x="640" y="95" width="280" height="45" as="geometry" />
-        </mxCell>
-
-        <mxCell id="flow_true" value="[Hợp lệ]" style="endArrow=classic;html=1;rounded=0;strokeWidth=1.5;strokeColor=#15803D;exitX=1;exitY=0.3;entryX=0;entryY=0.5;fontColor=#15803D;fontStyle=1;fontSize=10;" edge="1" parent="box_flow_container" source="node_decision" target="node_success">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-
-        <mxCell id="flow_false" value="[Từ chối]" style="endArrow=classic;html=1;rounded=0;strokeWidth=1.5;strokeColor=#DC2626;exitX=1;exitY=0.7;entryX=0;entryY=0.5;fontColor=#DC2626;fontStyle=1;fontSize=10;" edge="1" parent="box_flow_container" source="node_decision" target="node_fail">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
 
       </root>
